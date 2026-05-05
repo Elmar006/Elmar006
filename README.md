@@ -1,16 +1,64 @@
-## Hi there 👋
+# Hi, I'm Elmar
 
-<!--
-**Elmar006/Elmar006** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Backend Engineer (Go) focused on building high-performance, distributed backend systems.
 
-Here are some ideas to get you started:
+I specialize in microservice architecture, API development (REST / gRPC), system performance optimization, and backend infrastructure design for scalable and reliable systems.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## About me
+
+- Backend development in Go (2+ years of commercial experience)
+- Microservices architecture design and implementation
+- High-load backend systems development
+- Legacy system migration to Go
+- Performance optimization (DB, caching, latency reduction)
+- Focus on system reliability, scalability, and clean architecture
+
+---
+
+## Tech Stack
+
+### Backend
+- Go (goroutines, concurrency, profiling, performance tuning)
+- REST API, gRPC, Protobuf
+- GraphQL
+- WebSocket
+
+### Databases
+- PostgreSQL
+- MySQL
+- Schema design, indexing, query optimization
+
+### Caching / Messaging
+- Redis (cache, pub/sub, rate limiting)
+- Kafka (event-driven architecture basics)
+
+### DevOps / Infrastructure
+- Docker, Docker Compose
+- Kubernetes
+- CI/CD (GitHub Actions)
+- Linux
+
+### Observability
+- Logging
+- Health checks
+- Graceful shutdown
+- Basic tracing practices
+
+---
+
+## Focus Areas
+
+- Distributed systems design
+- Backend performance engineering
+- Microservices architecture
+- System scalability and reliability
+- Backend infrastructure development
+
+---
+
+## Contact
+
+- Telegram: @viy1ix
+- Email: birembekove@gmail.com
