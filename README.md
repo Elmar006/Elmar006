@@ -1,19 +1,22 @@
 # Hi, I'm Elmar
 
-Backend Engineer (Go) focused on building high-performance, distributed backend systems.
+Backend Engineer focused on building high-performance, distributed, and fault-tolerant systems.
 
-I specialize in microservice architecture, API development (REST / gRPC), system performance optimization, and backend infrastructure design for scalable and reliable systems.
+I work across Go, Erlang/Elixir, and C, with a focus on backend architecture, scalable services, performance optimization, and reliable infrastructure for production systems.
 
 ---
 
 ## About me
 
-- Backend development in Go (2+ years of commercial experience)
-- Microservices architecture design and implementation
+- Backend development with Go, Erlang, Elixir, and C
+- Experience designing and implementing distributed systems
 - High-load backend systems development
-- Legacy system migration to Go
-- Performance optimization (DB, caching, latency reduction)
-- Focus on system reliability, scalability, and clean architecture
+- Legacy system migration and refactoring
+- Performance optimization: latency, throughput, memory usage, and database efficiency
+- Reliable service design with focus on scalability, observability, and maintainability
+- Experience with fault-tolerant and concurrent systems, including BEAM-based solutions
+- Low-level and performance-critical development in C
+- Strong interest in clean architecture, system design, and backend infrastructure
 
 ---
 
@@ -21,6 +24,9 @@ I specialize in microservice architecture, API development (REST / gRPC), system
 
 ### Backend
 - Go (goroutines, concurrency, profiling, performance tuning)
+- Erlang (concurrency, OTP, supervision trees, fault tolerance)
+- Elixir (BEAM ecosystem, distributed services, OTP, Phoenix)
+- C (low-level programming, performance-critical components, systems programming)
 - REST API, gRPC, Protobuf
 - GraphQL
 - WebSocket
@@ -33,6 +39,7 @@ I specialize in microservice architecture, API development (REST / gRPC), system
 ### Caching / Messaging
 - Redis (cache, pub/sub, rate limiting)
 - Kafka (event-driven architecture basics)
+- Message-driven and asynchronous system design
 
 ### DevOps / Infrastructure
 - Docker, Docker Compose
@@ -44,7 +51,7 @@ I specialize in microservice architecture, API development (REST / gRPC), system
 - Logging
 - Health checks
 - Graceful shutdown
-- Basic tracing practices
+- Metrics and tracing practices
 
 ---
 
@@ -52,9 +59,22 @@ I specialize in microservice architecture, API development (REST / gRPC), system
 
 - Distributed systems design
 - Backend performance engineering
+- Fault-tolerant service architecture
 - Microservices architecture
+- BEAM-based system development
+- Low-level systems programming
 - System scalability and reliability
 - Backend infrastructure development
+
+---
+
+## Professional Experience
+
+- Commercial backend development in Go
+- Hands-on experience with Erlang/Elixir for concurrent and fault-tolerant services
+- Experience with C for performance-sensitive and low-level components
+- Building and maintaining backend systems with a focus on reliability and clean architecture
+- Working with distributed service-oriented systems and production infrastructure
 
 ---
 
