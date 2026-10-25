@@ -1,93 +1,56 @@
-<p>
-  <img src="assets/profile-hero.png" alt="Elmar — Backend &amp; Systems Engineering. Go, distributed systems, reliability." width="100%">
-</p>
+# Elmar
 
-# Hi, I'm Elmar
+**Backend Engineer · Go / Erlang / Elixir / C**
 
-**Backend engineer · Go / Erlang / Elixir / C**
+Commercial backend development in **Go**, concurrent and fault-tolerant services in **Erlang/Elixir**, and low-level, performance-critical components in **C**.
 
-I build backend systems with particular attention to **concurrency, data integrity, and recovery from failure**. My work spans service architecture, asynchronous processing, database design, and the infrastructure that keeps applications running.
+I design distributed backends, develop high-load services, migrate and refactor legacy systems, and optimize latency, throughput, memory usage and database access.
 
-Commercial backend development is my main work. Outside it, I build my own products and self-hosted infrastructure, taking an idea through APIs, storage, workers, interfaces, and operational tooling.
+## Technical specialization
 
-<p>
-  <img src="assets/badges/go.svg" alt="Go">
-  <img src="assets/badges/erlang.svg" alt="Erlang">
-  <img src="assets/badges/elixir.svg" alt="Elixir">
-  <img src="assets/badges/c.svg" alt="C">
-  <img src="assets/badges/postgresql.svg" alt="PostgreSQL">
-  <img src="assets/badges/rabbitmq.svg" alt="RabbitMQ">
-  <img src="assets/badges/docker.svg" alt="Docker">
-  <img src="assets/badges/linux.svg" alt="Linux">
-</p>
-
-<p>
-  <a href="#engineering-focus">Engineering focus</a> &nbsp;·&nbsp;
-  <a href="#selected-public-work">Public work</a> &nbsp;·&nbsp;
-  <a href="#products-im-building">Products</a> &nbsp;·&nbsp;
-  <a href="#contact">Contact</a>
-</p>
-
-## Engineering focus
-
-- **Concurrency & performance:** goroutine lifecycles, cancellation, bounded worker pools, backpressure, lock contention, allocations, and latency. I approach optimization through profiling and measurement.
-
-- **Durable asynchronous work:** transactional outbox, idempotency keys, delivery acknowledgements, retry budgets, worker leases, and fencing. Ambiguous outcomes need reconciliation before another side effect.
-
-- **Data integrity & isolation:** PostgreSQL transactions, locking, indexes, query plans, migrations, and row-level security. Tenant identity and authorization must remain explicit across APIs, jobs, and storage.
-
-- **Service boundaries & contracts:** REST, gRPC, Protobuf, authentication, and separation of public traffic from administrative control. Clear ownership of state matters as much as the transport.
-
-- **Security & operations:** scoped credentials, mTLS, encrypted payloads, readiness, graceful shutdown, metrics, and recovery procedures. Verification includes failure paths and tests against real dependencies.
-
-- **AI workflow infrastructure:** durable execution, provider budgets, artifact identity, permission boundaries, and checks before publication. I am interested in making generation workflows traceable and recoverable.
-
-## Selected public work
-
-### 01 / [selfmail](https://github.com/Elmar006/selfmail)
-
-**Self-hosted transactional email infrastructure.** A Go service with REST, SMTP submission, and a Go SDK, backed by PostgreSQL, RabbitMQ, Redis, and Postfix.
-
-The engineering core: tenant RLS, transactional outbox, bounded delivery workers, idempotent acceptance, encrypted content, and explicit delivery states. API acceptance, MTA submission, and remote delivery are tracked separately; an unknown handoff is reconciled.
-
-[Architecture](https://github.com/Elmar006/selfmail/blob/main/docs/architecture.md) · [Integration](https://github.com/Elmar006/selfmail/blob/main/docs/integration.md) · [Recovery](https://github.com/Elmar006/selfmail/blob/main/docs/recovery.md)
-
-### 02 / [API Gateway / RouteFlow](https://github.com/Elmar006/API-Gateway)
-
-**A Go reverse proxy with a desktop control plane.** PostgreSQL-backed dynamic routes, a method/path trie, a sharded token-bucket limiter, asynchronous batch logging, and separate public and administrative HTTP servers.
-
-RouteFlow adds a Tauri + React interface for inspecting topology and configuring routes. The project connects backend traffic handling with a usable operational interface.
-
-[Backend](https://github.com/Elmar006/API-Gateway/tree/master/backend) · [Routing implementation](https://github.com/Elmar006/API-Gateway/blob/master/backend/internal/infrastructure/router/trie.go) · [Control plane](https://github.com/Elmar006/API-Gateway/tree/master/client)
-
-### 03 / [Энергоконтур / Energokontur](https://github.com/Elmar006/energy_web)
-
-**Planning and simulation for EV charging infrastructure.** A project connecting site selection, grid capacity, charging demand, equipment, and phased investment.
-
-An independent operational simulation examines queues, power sharing, demand changes, and equipment failures. This is where my interest in backend engineering meets optimization and modelling real operating constraints.
-
-## Products I'm building
-
-Alongside my main work, I develop product systems where backend correctness has a direct effect on everyday operations.
-
-| Product | Domain & engineering work |
+| Technology | Work |
 | :--- | :--- |
-| **Devora** | An AI-assisted website and business platform. My focus includes generation workflows, artifact lifecycle, publication boundaries, and CRM context. |
-| **Korger** | An automotive-service platform spanning a public site and staff CRM. Work includes scheduling, repair workflows, permissions, inventory, finance, media processing, and live updates. |
-| **NRAV** | A coffee-shop platform connecting a website, Telegram Mini App, and staff tools. Work includes pickup scheduling, order state, reservations, payments, and notification workflows. |
+| **Go** | Concurrent services and microservices; goroutines, synchronization, profiling and performance tuning. |
+| **Erlang / Elixir** | BEAM-based services, OTP, supervision trees, process messaging, fault tolerance and Phoenix. |
+| **C** | Systems programming, low-level components and performance-sensitive code. |
+| **PostgreSQL / MySQL** | Schema design, indexing, transactions and query optimization. |
 
-<sub>These product repositories are private. Public implementation examples are linked above.</sub>
+**Service operation:** logging, metrics, tracing, health checks and graceful shutdown.
 
-## Tools & deeper interests
+## Public projects
 
-**Core:** Go · Erlang/OTP · Elixir/BEAM · C · SQL<br>
-**Data & messaging:** PostgreSQL · Redis · RabbitMQ · MySQL · Kafka fundamentals<br>
-**Interfaces:** REST · gRPC · Protobuf · WebSocket · SSE<br>
-**Infrastructure:** Linux · Docker / Compose · GitHub Actions · Prometheus<br>
-**Product interfaces:** TypeScript · React · Next.js · Tauri
+### [Selfmail](https://github.com/Elmar006/selfmail)
 
-I spend time on **OTP supervision, process isolation, memory behaviour, and failure semantics**: how to contain a fault, bound resource use, preserve ownership of state, and recover predictably. I also care about readable code, explicit dependencies, and improving legacy systems in manageable steps.
+Multi-tenant transactional email backend in Go: PostgreSQL outbox and RLS, RabbitMQ quorum queues with publisher confirms and manual ACK, Redis rate limits, and Postfix delivery. REST, SMTP submission and a Go SDK; AES-256-GCM payload encryption and mTLS. Ambiguous MTA handoffs are recorded as `submission_unknown`.
+
+[Delivery worker](https://github.com/Elmar006/selfmail/blob/main/internal/worker/worker.go) · [Architecture and delivery semantics](https://github.com/Elmar006/selfmail/blob/main/docs/architecture.md)
+
+### [API Gateway / RouteFlow](https://github.com/Elmar006/API-Gateway)
+
+Go reverse proxy with PostgreSQL-backed dynamic routes, a method/path trie, a **16-shard per-IP token-bucket limiter**, and a bounded, non-blocking request-log buffer with batch writes through **`pgx.CopyFrom`**. Separate public and administrative HTTP servers; Tauri/React desktop control plane.
+
+[Rate limiter](https://github.com/Elmar006/API-Gateway/blob/master/backend/internal/infrastructure/limiter/IPLimiter.go) · [Batch persistence](https://github.com/Elmar006/API-Gateway/blob/master/backend/internal/infrastructure/repo/logRepo.go)
+
+### [Энергоконтур / Energokontur](https://github.com/Elmar006/energy_web)
+
+EV charging infrastructure planner. A Python/Pyomo optimization model selects charging sites, equipment, grid upgrades, batteries and solar across multiple investment years. An independent SimPy event simulation models arrivals, queues, power allocation and equipment outages.
+
+[Optimization model](https://github.com/Elmar006/energy_web/blob/main/engine/energy/optimizer.py) · [Event simulation](https://github.com/Elmar006/energy_web/blob/main/engine/energy/simulation.py)
+
+## Product development outside my main work
+
+- **Devora** — AI website generation, background processing, previews and publication. Go, PostgreSQL and Redis.
+- **Korger** — automotive-service CRM: scheduling, work orders, inventory, finance, role-based access and SSE updates.
+- **NRAV** — coffee ordering: pickup slots, reservations, payments, refunds and staff tools for a website and Telegram Mini App.
+
+These three product repositories are private.
+
+## Stack
+
+**APIs:** REST · gRPC · Protobuf · GraphQL · WebSocket · SSE<br>
+**Data & messaging:** PostgreSQL · MySQL · Redis (cache, pub/sub, rate limiting) · RabbitMQ · Kafka (event-driven fundamentals)<br>
+**Infrastructure:** Linux · Docker · Docker Compose · Kubernetes · CI/CD with GitHub Actions
 
 ## Contact
 
-[Telegram ↗](https://t.me/viy1ix) &nbsp;·&nbsp; [Email ↗](mailto:birembekove@gmail.com)
+[Telegram: @viy1ix](https://t.me/viy1ix) · [birembekove@gmail.com](mailto:birembekove@gmail.com)
