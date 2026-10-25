@@ -1,0 +1,2 @@
+Mastheads: original SVG typographic layout for Elmar006.
+Language icons: Simple Icons (https://simpleicons.org), obtained through Shields.io (https://shields.io).

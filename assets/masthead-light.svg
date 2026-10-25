@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="128" viewBox="0 0 960 128" role="img" aria-labelledby="title desc">
+  <title id="title">Elmar — Backend Engineer</title>
+  <desc id="desc">Distributed systems, performance engineering and fault-tolerant services.</desc>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+    <text x="0" y="59" fill="#1f2328" font-size="56" font-weight="650" letter-spacing="-1.5">Elmar<tspan fill="#3f7d9b">.</tspan></text>
+    <text x="2" y="94" fill="#57606a" font-size="17" font-weight="500" letter-spacing="1.4">BACKEND ENGINEER</text>
+  <path d="M606 23v64" fill="none" stroke="#d8dee4"/>
+  <g fill="#57606a" font-size="12" font-weight="500" letter-spacing="1.15">
+    <text x="634" y="37">DISTRIBUTED SYSTEMS</text>
+    <text x="634" y="60">PERFORMANCE ENGINEERING</text>
+    <text x="634" y="83">FAULT-TOLERANT SERVICES</text>
+  </g>
+  </g>
+  <path d="M0 122H960" fill="none" stroke="#d8dee4"/>
+  <path d="M0 122H36" fill="none" stroke="#3f7d9b" stroke-width="3"/>
+</svg>

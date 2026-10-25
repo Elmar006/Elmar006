@@ -1,6 +1,13 @@
-# Elmar
+<p>
+  <a href="assets/masthead-dark.svg#gh-dark-mode-only"><picture><source media="(max-width: 600px)" srcset="assets/masthead-dark-compact.svg"><img src="assets/masthead-dark.svg" width="100%" alt="Elmar — Backend Engineer. Distributed systems, performance engineering and fault-tolerant services."></picture></a><a href="assets/masthead-light.svg#gh-light-mode-only"><picture><source media="(max-width: 600px)" srcset="assets/masthead-light-compact.svg"><img src="assets/masthead-light.svg" width="100%" alt="Elmar — Backend Engineer. Distributed systems, performance engineering and fault-tolerant services."></picture></a>
+</p>
 
-**Backend Engineer · Go / Erlang / Elixir / C**
+<p>
+  <img src="assets/icons/go.svg" width="18" height="18" alt=""> <strong>Go</strong> &nbsp;&nbsp;
+  <img src="assets/icons/erlang.svg" width="18" height="18" alt=""> <strong>Erlang</strong> &nbsp;&nbsp;
+  <img src="assets/icons/elixir.svg" width="18" height="18" alt=""> <strong>Elixir</strong> &nbsp;&nbsp;
+  <img src="assets/icons/c.svg" width="18" height="18" alt=""> <strong>C</strong>
+</p>
 
 Commercial backend development in **Go**, concurrent and fault-tolerant services in **Erlang/Elixir**, and low-level, performance-critical components in **C**.
 
@@ -37,7 +44,7 @@ EV charging infrastructure planner. A Python/Pyomo optimization model selects ch
 
 [Optimization model](https://github.com/Elmar006/energy_web/blob/main/engine/energy/optimizer.py) · [Event simulation](https://github.com/Elmar006/energy_web/blob/main/engine/energy/simulation.py)
 
-## Product development outside my main work
+## Outside my main work
 
 - **Devora** — AI website generation, background processing, previews and publication. Go, PostgreSQL and Redis.
 - **Korger** — automotive-service CRM: scheduling, work orders, inventory, finance, role-based access and SSE updates.
@@ -51,6 +58,6 @@ These three product repositories are private.
 **Data & messaging:** PostgreSQL · MySQL · Redis (cache, pub/sub, rate limiting) · RabbitMQ · Kafka (event-driven fundamentals)<br>
 **Infrastructure:** Linux · Docker · Docker Compose · Kubernetes · CI/CD with GitHub Actions
 
-## Contact
+---
 
 [Telegram: @viy1ix](https://t.me/viy1ix) · [birembekove@gmail.com](mailto:birembekove@gmail.com)
