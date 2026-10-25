@@ -1,0 +1,12 @@
+Use case: stylized-concept
+Asset type: a finished wide GitHub profile masthead for a backend and systems engineer, approximately 2400 x 800 pixels, a 3:1 landscape composition.
+Primary request: create a restrained, exceptionally polished editorial engineering banner for Elmar. It should feel like a carefully art-directed systems architecture notebook translated into a premium minimalist cover.
+Scene/backdrop: almost-black charcoal (#0d1117) with extremely subtle fine grain, a quiet technical grid fading into the background, crisp thin strokes.
+Composition: large, beautifully typeset left-aligned title in the left half with generous 90px inset margins. On the right, an abstract technical sculpture drawn with hairline orthogonal paths: several thin stacked planes and a small number of connected square nodes suggesting durable queues, services, and data flow. The composition is calm, precise and mostly empty space, never a busy circuit board.
+Color palette: graphite, soft silver-white typography, desaturated teal accents (#75b9ad) on very few graph nodes and paths. No saturated neon.
+Text (verbatim), exactly three lines, clean modern Swiss grotesk typography:
+"ELMAR"
+"BACKEND & SYSTEMS ENGINEERING"
+"Go / Distributed Systems / Reliability"
+ELMAR is the large primary title, the second line is a much smaller uppercase descriptor, the third line is small muted silver. All text must be highly readable at a display width of 850 pixels.
+Constraints: flat 2D editorial composition with a subtle architectural dimensionality only in the right-hand drawing; no drop shadows around text; excellent visual hierarchy; no photo, no avatar, no mascots, no badges, no logos, no additional text, no borders, no watermark. This must read as an understated senior engineering portfolio cover.
